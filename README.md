@@ -17,7 +17,18 @@ retryCount = 1
 1: go to : [localConfigRunner.xml](./src/main/resources/config/localConfigRunner.xml) <br/>
 2: change values for parameters accordingly & run testNG file. <br/>
 
-##Note:
+### Command to run selenium-grid on docker:
+```shell script
+docker-compose up -d
+```
+link for [docker compose file](./docker-compose.yml) <br/>
+
+
+### Command to run appium server :
+run [runAppiumServer.sh](./runAppiumServer.sh) <br/>
+# make sure selenium-grid is already running. 
+
+### ****Note:**** ###
 For user distribution give config in threadsName variable with the format <browsername>:<percentage> & you can give the multiple browsers with the comma separated.<br/>
 for example :
 ```
