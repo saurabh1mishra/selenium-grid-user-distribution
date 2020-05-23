@@ -36,7 +36,7 @@ public class TestRunner {
         int percentageSum = Arrays.stream(browserNames).map(ele -> ((String) ele).replaceAll(".*:", "")).mapToInt(Integer::parseInt).reduce(0, Integer::sum);
 
         if (percentageSum > 100) {
-            throw new InvalidParameterException("");
+            throw new InvalidParameterException("sum of total percentage distribution should be 100 %");
         }
 
         Arrays.stream(browserNames).forEach(i -> {

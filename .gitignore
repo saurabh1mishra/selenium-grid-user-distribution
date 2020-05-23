@@ -1,11 +1,10 @@
 # Compiled class file
 *.class
-<<<<<<< HEAD
 target
 ./target
 .idea
-=======
->>>>>>> 8c47fd0a85d89ef47bb929ab4a3bdbc88ef53e48
+logs
+
 
 # Log file
 *.log

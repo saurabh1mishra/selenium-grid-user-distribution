@@ -10,7 +10,8 @@
         <parameter name="totalThreads" value="1"/>
         <parameter name="threadsName" value="remotechrome:100,remoteFirefox:0,mobilechrome:0"/>
         <parameter name="appiumUrl" value="http://127.0.0.1:4723/wd/hub"/>
-        <parameter name="seleniumGridUrl" value="http://127.0.0.1:4444/wd/hub"></parameter>
+        <parameter name="seleniumGridUrl" value="http://127.0.0.1:4444/wd/hub"/>
+        <parameter name="retryCount" value="1"/>
         <classes>
             <class name="Runner.TestRunner"/>
         </classes>
