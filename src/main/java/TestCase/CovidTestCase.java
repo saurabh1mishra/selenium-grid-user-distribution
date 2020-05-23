@@ -16,12 +16,12 @@ public class CovidTestCase extends BaseTestCase {
 
     @Test
     public void test() throws InterruptedException {
-        log.info("navigating to : https://www.covid2019stats.net/");
-        getDriver().navigate().to("https://www.covid2019stats.net/");
+        log.info("navigating to : https://www.covid2019stats.net");
+        getDriver().navigate().to("https://www.covid2019stats.net");
         for (int i = 0; i < 10; i++) {
             scrollingPage();
         }
-        getDriver().findElement(By.xpath("//table[@id='coronaTable']//tr[1]//a[@class=\"btn btn-success btn-sm\"]")).click();
+        getDriver().findElement(By.xpath("//*[@id='coronaTable']/tbody/tr[1]//a[contains(@class,'see_graph')])")).click();
     }
 
 

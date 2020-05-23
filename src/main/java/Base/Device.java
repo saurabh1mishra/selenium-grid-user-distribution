@@ -53,7 +53,7 @@ public enum Device {
                 capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
                 capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
                 capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-                return new RemoteWebDriver(new URL(System.getProperty("seleniumUrl", "http://localhost:4444/wd/hub")), capabilities);
+                return new RemoteWebDriver(new URL(System.getProperty("seleniumGridUrl", "http://localhost:4444/wd/hub")), capabilities);
             case REMOTEFIREFOX:
                 FirefoxOptions firefoxOptions1 = new FirefoxOptions();
                 return new RemoteWebDriver(new URL(System.getProperty("seleniumUrl", "http://localhost:4444/wd/hub")), firefoxOptions1);
