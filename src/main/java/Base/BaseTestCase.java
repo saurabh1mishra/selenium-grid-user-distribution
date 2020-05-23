@@ -70,6 +70,7 @@ public abstract class BaseTestCase extends DeviceManager {
         if (threadName == Device.REMOTECHROME || threadName == Device.CHROME) {
             clearCacheChrome();
         }
+        log.info("closing browser");
         getDriver().quit();
     }
 
