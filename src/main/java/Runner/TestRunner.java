@@ -32,7 +32,7 @@ public class TestRunner {
             System.getProperties().putAll(testContext.getCurrentXmlTest().getAllParameters());
         List<Object[]> data = new ArrayList<>();
         int threadCount = Integer.parseInt(String.valueOf(System.getProperty("totalThreads")));
-        String[] browserNames = System.getProperty("threadsName").split(",");
+        String[] browserNames = System.getProperty("threadsName","1").split(",");
         int percentageSum = Arrays.stream(browserNames).map(ele -> ((String) ele).replaceAll(".*:", "")).mapToInt(Integer::parseInt).reduce(0, Integer::sum);
 
         if (percentageSum > 100) {

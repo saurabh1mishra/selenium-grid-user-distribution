@@ -65,7 +65,7 @@ public enum Device {
                 capability.setCapability("automationName", "uiautomator2");
                 capability.setCapability("appActivity", "com.google.android.apps.chrome.Main");
                 capability.setCapability("noReset", true);
-                return new RemoteWebDriver(new URL(System.getProperty("appiumUrl", "http://127.0.0.1:4723/wd/hub")), capability);
+                return new RemoteWebDriver(new URL(System.getProperty("appiumUrl", "http://localhost:4444/wd/hub")), capability);
             default:
                 return null;
         }
