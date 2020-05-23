@@ -25,8 +25,11 @@ link for [docker compose file](./docker-compose.yml) <br/>
 
 
 ### Command to run appium server :
-run [runAppiumServer.sh](./runAppiumServer.sh) <br/>
-# make sure selenium-grid is already running. 
+```shell script
+./runAppiumServer.sh
+```
+link for [runAppiumServer.sh](./runAppiumServer.sh) <br/>
+##### make sure selenium-grid is already running. 
 
 ### ****Note:**** ###
 For user distribution give config in threadsName variable with the format <browsername>:<percentage> & you can give the multiple browsers with the comma separated.<br/>
