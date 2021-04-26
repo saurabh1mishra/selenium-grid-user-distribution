@@ -19,7 +19,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <selenium.version>LATEST</selenium.version>
         <log4j.version>1.2.17</log4j.version>
-        <apache.commons.verison>2.5</apache.commons.verison>
+        <apache.commons.verison>2.7</apache.commons.verison>
         <restassured.version>3.3.0</restassured.version>
     </properties>
 
